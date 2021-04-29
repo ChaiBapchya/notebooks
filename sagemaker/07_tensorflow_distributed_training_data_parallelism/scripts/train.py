@@ -93,8 +93,8 @@ if __name__ == "__main__":
     parser.add_argument("--eval-batch-size", type=int, default=8)
     parser.add_argument("--model_name", type=str)
     parser.add_argument("--learning_rate", type=str, default=5e-5)
-    parser.add_argument("--do_train", type=bool, default=True)
-    parser.add_argument("--do_eval", type=bool, default=True)
+    parser.add_argument("--do_train", type=bool, default=False)
+    parser.add_argument("--do_eval", type=bool, default=False)
 
     # Data, model, and output directories
     parser.add_argument("--output_data_dir", type=str, default=os.environ["SM_OUTPUT_DATA_DIR"])
